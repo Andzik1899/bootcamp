@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "nowa_backend": {
+      "candid": "src/nowa_backend/nowa_backend.did",
+      "package": "nowa_backend",
+      "type": "rust"
+    },
+    "nowa_frontend": {
+      "dependencies": [
+        "nowa_backend"
+      ],
+      "source": [
+        "src/nowa_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nowa_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
